@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BLACK jack</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+	@media only screen and (max-width: 600px){
+		body{
+		background-image: url("cards/download.jfif");
+		max-width: 100%;
+		height: auto;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		
+	}
+	.btn{
+		position: absolute;
+		top: 47%;
+		left: 36%;
+		overflow: hidden;
+
+	}
+	.btn button{
+		width: 100%;
+		height: 100%;
+		color: white;
+		background-color: black;
+		padding: 20px 35px;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	.btn button::before{
+		content: '';
+		position: absolute;
+		left: 2%;
+		top: 1%;
+		width: 100px;
+		height: 100%;
+		background: linear-gradient(red,black);
+		animation: card 4s linear infinite;
+	}
+	@keyframes card{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+	.btn button::after{
+		content: '';
+		position: absolute;
+		inset: 4px;
+		background: black;
+		border-radius: 4px;
+	}
+	p{
+		position: relative;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 450px;
+	}
+	.how h1{
+		color: white;
+		text-align: center;
+		margin-top: 260px;
+		font-size: 40px;
+		font-weight: lighter;
+		
+	}
+	.how a{
+		color: white;
+		font-family: 'VT323', monospace;
+	}
+	}
+	
+</style>
+<body>
+	<div class="btn">
+		<button onclick="start()">START</button>
+	</div>
+<a href="how.html"><p class="font-effect-neon">START</p></a>
+<div class="how">
+<a href="how.html"><h1>HOW TO PLAY?</h1></a>	
+</div>
+</body>
+</html>
+
+
+<script>
+	function start(){
+	window.location.href = "main.html"
+}
+</script>

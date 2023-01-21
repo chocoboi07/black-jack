@@ -1,0 +1,107 @@
+body{
+	background-color: #34495e;
+}
+
+h1{
+	color:ghostwhite;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: 79px;
+	border: solid;
+	border-color: ghostwhite;
+	border-width: 5px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: cyan;
+}
+
+h2{
+	color: ghostwhite;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: 39px;
+	
+}
+
+
+.petti{
+	width: 799px;
+	height: 499px;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+
+button{
+	color: white;
+	font-family: monospace;
+	padding: 5px;
+	font-size: 25px;
+	width: 199px;
+	border: none;
+	border-radius: 5px;
+
+	line-height: 42px;
+  	padding: 0;
+  	border: none;
+  	background: rgb(255,27,0);
+
+}
+
+button:disabled{
+	background-color:rgba(255,27,0,0.5) ;
+	color: rgba(255,255,255,0.5);
+}
+
+hr{
+	background-color: ghostwhite;
+}
+
+#ins{
+	color: ghostwhite;
+	font-size: 39px;
+	font-family: monospace;
+	font-weight: bolder;
+}
+
+#money{
+	font-size: 49px;
+	font-family: monospace;
+	font-weight: bolder;
+	margin-top: -4px;
+	color: ghostwhite;
+}
+
+.box{
+	margin-top: 29px;
+	border: solid;
+	border-color: ghostwhite;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	width: 199px;
+	height: 49px;
+	
+}
+
+#btn2{
+	background-color: rgb(255,27,0);
+	margin-top: 9px;
+}
+
+
+@media screen and (max-width: 600px){
+
+	.petti{
+		height: 299;
+		width: 499px;
+		margin-top: 149px;
+	}
+
+	p{
+	color: ghostwhite;
+	font-size: 29px;
+}
+
+	#btn2{
+		margin-top: 25px;
+	}
+
+}

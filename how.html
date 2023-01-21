@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO PLAY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    @media only screen and (max-width: 600px){
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("cards/download\ \(1\).jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 412px;
+            height: 914px;
+            position: relative;
+        }
+    .container{
+        margin-top: 20px;
+        display: flex;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 500px;
+        box-shadow: 10px 10px 50px black;
+        background: rgba(214, 202, 202, 0.16);
+        border-radius: 8px;
+        padding: 10px;
+        text-align: left;
+    }
+    .content p{
+        color: white;
+        font-size: 20px;
+    }
+    .header h1{
+        margin-top: 80px;
+        font-family: 'VT323', monospace;
+        letter-spacing: 4px;
+        font-weight: lighter;
+        color: black;
+        font-size: 40px;
+        text-align: center;
+    }
+    .btn button,a{
+        color: white;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 15px 25px;
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .btn button::before{
+        content: '';
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 170px;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(red,black);
+        animation: card 4s linear infinite;
+    }
+    @keyframes card{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .btn button::after{
+        content: 'READY TO PLAY';
+        padding-top: 10px;
+        font-size: 13px;
+        position: absolute;
+        z-index: 3;
+        inset: 4px;
+        background: black;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+     h2{
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+}
+</style>//
+<body>
+    <div class="header">
+        <h1 class="font-effect-neon">HOW TO PLAY?</h1>
+    </div><center>
+    <div class="container">
+        
+        <div class="content">
+            <p>
+                1.You will be given with two numbers and their sum will be displayed.<br><br>
+	            2.If your sum is equal to 21 then you got the BLACK JACK (you win the game) .<br><br>
+	            3.If your sum exceed 21 then the game is over.<br><br>
+	            4.If your sum is less than 21 then you can ask for the next number and countinue the game.<br><br>
+	            5.The game will be countinued untill the sum reaches 21 or exceeds 21.
+            </p>
+        </div>
+    </div>
+    
+    <div class="btn">
+        <a href="main.html"><button>READY TO PLAY</button></a>
+</center>
+</body>
+</html>
